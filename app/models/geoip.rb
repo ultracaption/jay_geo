@@ -1,6 +1,7 @@
 module JayGeo
   class GeoIp
     class NotConfigured < StandardError; end
+    class InvalidResult < StandardError; end
 
     def self.find(query)
       CitySearchResult.new(database.city(query))

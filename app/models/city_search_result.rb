@@ -5,6 +5,7 @@ module JayGeo
     end
 
     def initialize(result_attributes = [])
+      raise GeoIp::InvalidResult.new unless result_attributes
       @attributes = Hash[self.class.attributes.zip(result_attributes)]
     end
 
