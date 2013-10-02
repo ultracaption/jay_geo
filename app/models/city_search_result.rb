@@ -9,16 +9,16 @@ module JayGeo
       @attributes = Hash[self.class.attributes.zip(result_attributes)]
     end
 
+    def to_hash
+      @attributes
+    end
+
     def method_missing(method_name, *args, &block)
       if self.class.attributes.include?(method_name)
         @attributes[method_name]
       else
         super
       end
-    end
-
-    def to_hash
-      @attributes
     end
   end
 end
