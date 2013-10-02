@@ -1,1 +1,1 @@
-JayGeo::GeoIp.configure('geoip_databases/GeoIP-133_20120501/GeoIPCity.dat')
+JayGeo::GeoIp.configure('db/GeoIP-133_20120501/GeoIPCity.dat')

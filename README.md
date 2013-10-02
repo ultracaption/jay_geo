@@ -24,12 +24,12 @@ Setup
 
   2. Download and locate GeoIP City database under project directory>
 
-        ${JAY_GEO_HOME}/geoip_databases/GeoIPCity.dat
+        ${JAY_GEO_HOME}/db/GeoIPCity.dat
 
   3. Create `${JAY_GEO_HOME}/config/application.rb` for mandatory
      configuration.
 
-        JayGeo::GeoIp.configure('geoip_databases/GeoIPCity.dat')
+        JayGeo::GeoIp.configure('db/GeoIPCity.dat')
 
 Usage
 -----
